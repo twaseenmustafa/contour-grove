@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+dist/
+test-results/
+playwright-report/
+*.local
+.env
+.env.*
+!.env.example
+
+# Local reviews, scratch files, and private test artwork
+.internal_docs/
+tests/fixtures/user-sunburst.png
+probe_grid_1102.cjs
+d.accept())

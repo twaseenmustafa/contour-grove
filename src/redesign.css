@@ -1,0 +1,528 @@
+/* Logo Workshop — desktop design system. Artwork and canvas geometry are untouched. */
+:root {
+  --ui-bg: #101011;
+  --ui-panel: #19191b;
+  --ui-raised: #242426;
+  --ui-hover: #303034;
+  --ui-border: #37373b;
+  --ui-text: #f2f2f3;
+  --ui-muted: #b4b4ba;
+  --ui-accent: #bba4f5;
+  --ui-selection: #383144;
+  color-scheme: dark;
+}
+.open-studio {
+  background: var(--ui-bg);
+  color: var(--ui-text);
+}
+.open-studio .topbar {
+  background: #141415;
+  border-bottom: 1px solid #333336;
+  padding-inline: 20px;
+  gap: 14px;
+}
+.open-studio .brand {
+  color: #f7f7f8;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+.open-studio .brand-mark {
+  width: 30px;
+  height: 30px;
+  background: #29282e;
+  border-color: #4d4955;
+  border-radius: 9px;
+  color: #e3d8ff;
+}
+.open-studio .document-title {
+  color: #e7e7e9;
+  font-weight: 500;
+}
+.open-studio .document-title > .muted {
+  color: #9a9aa2;
+}
+.open-studio .file-menu > summary {
+  color: #c5c5c9;
+}
+.open-studio .top-actions {
+  gap: 5px;
+}
+.open-studio .history-actions {
+  gap: 2px;
+  padding-right: 8px;
+  margin-right: 4px;
+  border-right: 1px solid #37373b;
+}
+.open-studio .save-project {
+  background: #28282b;
+  border: 1px solid #414145;
+  border-radius: 7px;
+  padding-inline: 10px;
+}
+.open-studio .save-status {
+  color: #b2b2b8;
+  font-size: 11px;
+  margin-inline: 6px;
+}
+.open-studio .dock-toggle {
+  color: #c6c6cd;
+  border-radius: 7px;
+}
+.open-studio .dock-toggle[aria-pressed="true"] {
+  color: #f5f5f6;
+  background: #303034;
+}
+.open-studio .export-menu > summary {
+  border-radius: 7px;
+  padding-inline: 13px;
+}
+.open-studio .workspace-grid {
+  background: #111112;
+}
+.open-studio .panel {
+  background: var(--ui-panel);
+  color: var(--ui-text);
+  border-color: #343438;
+  box-shadow: none;
+}
+.open-studio .parts-panel,
+.open-studio .inspector {
+  padding: 16px;
+  scrollbar-color: #68686e #19191b;
+}
+.library-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+  margin: 0 0 10px;
+}
+.library-heading h2 {
+  margin: 0;
+  color: #f6f6f7;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.library-heading span {
+  color: #a4a4ab;
+  font-size: 11px;
+}
+.open-studio .library-tabs {
+  padding: 3px;
+  gap: 3px;
+  margin-bottom: 16px;
+  background: #111113;
+  border: 1px solid #343438;
+  border-radius: 8px;
+}
+.open-studio .library-tabs button {
+  min-height: 32px;
+  color: #bdbdc3;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 550;
+}
+.open-studio .library-tabs button[aria-selected="true"] {
+  background: #37373b;
+  color: #fff;
+  box-shadow: 0 1px 3px #0008;
+}
+.open-studio .library-tabs button span {
+  color: inherit;
+  opacity: 0.75;
+}
+.open-studio .selection-tools {
+  margin: 0 0 8px;
+  border-bottom: 1px solid #343438;
+  padding-bottom: 8px;
+}
+.open-studio .selection-tools button {
+  color: #c6c6cc;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.open-studio .parts-list {
+  margin: 0 -4px;
+  gap: 3px;
+}
+.open-studio .part-item {
+  grid-template-columns: 26px minmax(0, 1fr);
+}
+.open-studio .part-item .part-row {
+  min-height: 40px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  color: #e8e8eb;
+}
+.open-studio .part-row.selected {
+  background: var(--ui-selection);
+  border-color: #82729e;
+}
+.open-studio .part-row strong {
+  font-size: 12px;
+  font-weight: 550;
+}
+.open-studio .part-item .part-swatch {
+  width: 14px;
+  height: 14px;
+  border-color: #a4a4aa;
+  border-radius: 4px;
+}
+.open-studio .reference-note {
+  border-color: #36363a;
+  margin-top: 18px;
+}
+.open-studio .reference-note summary {
+  color: #bcbcc2;
+}
+.open-studio .inspector > .panel-title {
+  min-height: 46px;
+  margin: -16px -16px 14px;
+  padding: 0 16px;
+  background: #19191b;
+  border-color: #37373b;
+}
+.open-studio .inspector > .panel-title h2 {
+  color: #f6f6f7;
+  font-size: 14px;
+  font-weight: 650;
+}
+.inspector-context {
+  color: #aaaab1;
+  font-size: 11px;
+  font-weight: 500;
+}
+.open-studio .inspector .selected-name {
+  color: #f1f1f2;
+  padding: 10px 0 12px;
+  border-bottom: 1px solid #36363a;
+}
+.open-studio .inspector .selected-name > span {
+  color: #adadb5;
+}
+.open-studio .inspector .control-section {
+  border-color: #36363a;
+  padding-top: 16px;
+  margin-top: 14px;
+}
+.open-studio .control-section h3 {
+  color: #ececef;
+  font-size: 12px;
+  font-weight: 650;
+}
+.open-studio .inspector label,
+.open-studio .control-hint {
+  color: #bdbdc4;
+}
+.open-studio .two-fields > label {
+  background: #242426;
+  border-color: #55555b;
+  border-radius: 7px;
+  min-height: 36px;
+}
+.open-studio
+  input:not([type="checkbox"]):not([type="radio"]):not([type="color"]),
+.open-studio select,
+.open-studio textarea {
+  color: #f1f1f3;
+}
+.open-studio .inspector select,
+.open-studio .inspector input:not([type="checkbox"]):not([type="radio"]),
+.command-dialog textarea {
+  border-radius: 7px;
+}
+.open-studio .geometry-controls > summary,
+.open-studio .appearance-controls > summary,
+.open-studio .reference-note > summary {
+  color: #e5e5e8;
+}
+.open-studio .canvas-panel {
+  background: #0d0d0f;
+  border-color: #29292c;
+}
+.open-studio[data-workspace="true"] .canvas-surround {
+  background: #0d0d0f;
+}
+.open-studio[data-workspace="true"] .artboard-label {
+  color: #b6b6bc;
+  font-size: 11px;
+  font-weight: 500;
+}
+.open-studio .canvas-bottom {
+  color: #b2b2b9;
+  font-size: 11px;
+}
+.workspace-rail {
+  background: #222225f5;
+  border-color: #47474c;
+  border-radius: 14px;
+  gap: 5px;
+  padding: 6px;
+  box-shadow: 0 8px 24px #0008;
+}
+.workspace-rail button,
+.workspace-rail .studio-menu > summary {
+  border-radius: 9px;
+  color: #d7d7dc;
+}
+.workspace-rail .canvas-tool-group {
+  gap: 4px;
+}
+.workspace-rail .canvas-tool-group [aria-pressed="true"] {
+  background: #494052;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px #82729d;
+}
+.workspace-rail .insert-menu > summary {
+  background: #8056dc;
+  color: #fff;
+  border-radius: 9px;
+}
+.open-studio[data-workspace="true"] .viewport-toolbar {
+  border-radius: 11px;
+  background: #222225f5;
+  border-color: #48484d;
+  padding: 5px;
+  box-shadow: 0 8px 24px #0008;
+}
+.open-studio .zoom-controls button,
+.open-studio .zoom-controls select {
+  color: #e3e3e7;
+  border-radius: 6px;
+}
+.open-studio .zoom-controls .object-snap-toggle[aria-pressed="true"] {
+  background: #504366;
+  color: #fff;
+}
+.open-studio .grid-toggle[aria-pressed="true"] {
+  color: #fff;
+}
+.open-studio .canvas-add {
+  border-radius: 6px;
+}
+.studio-menu-body,
+.shortcut-grid,
+.insert-menu .studio-menu-body,
+.canvas-context-menu {
+  background: #252528;
+  color: #f4f4f5;
+  border: 1px solid #4c4c52;
+  border-radius: 10px;
+  box-shadow: 0 12px 36px #000a;
+}
+.open-studio .insert-shapes button {
+  background: #313135;
+  border: 1px solid #424248;
+  border-radius: 7px;
+  color: #f1f1f2;
+}
+.open-studio .asset-upload {
+  background: #303034;
+  border: 1px solid #5d5d65;
+  color: #f5f5f6;
+  border-radius: 7px;
+}
+.open-studio .assets-empty {
+  background: #202023;
+  border-color: #55555d;
+  border-radius: 9px;
+}
+.open-studio .assets-empty h3 {
+  color: #eeeef0;
+}
+.open-studio .asset-card {
+  background: #242427;
+  border-color: #4a4a50;
+  border-radius: 8px;
+}
+.open-studio .asset-actions button {
+  background: #333338;
+  color: #f3f3f4;
+  border-radius: 6px;
+}
+.open-studio .asset-footnote,
+.open-studio .panel-hint,
+.open-studio .asset-description {
+  color: #b9b9c0;
+}
+.trace-dialog,
+.command-dialog {
+  background: #1d1d20;
+  border: 1px solid #57575e;
+  color: #f4f4f5;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px #000b;
+}
+.notice,
+.pen-hint {
+  background: #28282bf5;
+  border-color: #55555d;
+  border-radius: 9px;
+  color: #f4f4f5;
+}
+.open-studio button:focus-visible,
+.open-studio input:focus-visible,
+.open-studio select:focus-visible,
+.open-studio summary:focus-visible,
+.open-studio a:focus-visible {
+  outline: 2px solid #c8b4ff;
+  outline-offset: 2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .open-studio button:not(:disabled):hover,
+  .open-studio summary:hover {
+    filter: brightness(1.12);
+  }
+  .open-studio .part-row:not(:disabled):hover {
+    background: #303034;
+  }
+  .open-studio .part-row.selected:hover {
+    background: #42394e;
+  }
+}
+@media (min-width: 1100px) and (min-height: 680px) {
+  .open-studio {
+    grid-template-rows: 56px minmax(0, 1fr);
+  }
+  .open-studio .topbar {
+    height: 56px;
+    min-height: 56px;
+  }
+  .open-studio .workspace-grid {
+    grid-template-columns: 252px minmax(0, 1fr) 288px;
+    gap: 0;
+    padding: 0;
+  }
+  .open-studio .panel,
+  .open-studio .canvas-panel {
+    border-radius: 0;
+  }
+  .open-studio .parts-panel {
+    border-width: 0 1px 0 0;
+  }
+  .open-studio .inspector {
+    border-width: 0 0 0 1px;
+  }
+  .open-studio .canvas-panel {
+    border: 0;
+  }
+  .open-studio .parts-panel .library-tabs {
+    position: static;
+    box-shadow: none;
+  }
+  .open-studio .inspector > .panel-title {
+    top: -16px;
+    box-shadow: 0 -16px #19191b;
+  }
+  .open-studio[data-left-open="false"] .workspace-grid {
+    grid-template-columns: minmax(0, 1fr) 288px;
+  }
+  .open-studio[data-right-open="false"] .workspace-grid {
+    grid-template-columns: 252px minmax(0, 1fr);
+  }
+  .open-studio[data-left-open="false"][data-right-open="false"]
+    .workspace-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (min-width: 1100px) and (max-width: 1279px) and (min-height: 680px) {
+  .open-studio .workspace-grid {
+    grid-template-columns: 220px minmax(0, 1fr) 250px;
+  }
+  .open-studio[data-left-open="false"] .workspace-grid {
+    grid-template-columns: minmax(0, 1fr) 250px;
+  }
+  .open-studio[data-right-open="false"] .workspace-grid {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .open-studio[data-left-open="false"][data-right-open="false"]
+    .workspace-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .open-studio *,
+  .open-studio *::before,
+  .open-studio *::after {
+    scroll-behavior: auto;
+  }
+}
+
+/* Contextual, clearly named controls */
+.workspace-rail .insert-menu > summary,
+.workspace-rail .shapes-menu > summary {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+}
+.workspace-rail .insert-menu > summary svg,
+.workspace-rail .shapes-menu > summary svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.workspace-rail .shapes-menu > summary > span {
+  display: none;
+}
+.workspace-rail .shapes-menu[open] > summary {
+  background: #494052;
+  color: #fff;
+}
+.shapes-menu .studio-menu-body {
+  position: absolute;
+  left: 54px;
+  top: 0;
+  right: auto;
+  width: 270px;
+  padding: 14px;
+}
+.shapes-menu .insert-shapes {
+  margin-bottom: 0;
+}
+.open-studio .panel-collapse {
+  min-height: 28px;
+  padding: 3px 8px;
+  background: transparent;
+  border: 1px solid #4b4b52;
+  border-radius: 6px;
+  color: #c8c8cf;
+  font-size: 11px;
+}
+.open-studio .reopen-panel {
+  position: absolute;
+  top: 46px;
+  z-index: 6;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #55515e;
+  border-radius: 7px;
+  background: #252329;
+  color: #f1eef7;
+  font-size: 12px;
+  box-shadow: 0 4px 14px #0008;
+}
+.reopen-library {
+  left: 12px;
+}
+.reopen-inspector {
+  right: 12px;
+}
+@media (max-width: 1099px), (max-height: 679px) {
+  .open-studio .panel-collapse,
+  .open-studio .reopen-panel {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .shapes-menu .studio-menu-body {
+    width: min(270px, calc(100vw - 88px));
+  }
+}
+
+.open-studio .brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
