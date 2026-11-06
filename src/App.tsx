@@ -952,7 +952,7 @@ export default function App() {
       <header className="topbar">
         <a className="brand" href="#" onClick={(e) => e.preventDefault()}>
           <span className="brand-mark">
-            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" />
+            <img src={`${import.meta.env.BASE_URL}favicon.svg?v=2`} alt="" />
           </span>
           <span>Contour Grove</span>
         </a>

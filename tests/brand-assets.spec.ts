@@ -14,7 +14,7 @@ test("brand and preview assets load with honest metadata", async ({
   ).toBe(true);
   await expect(
     page.locator('link[rel="icon"][type="image/svg+xml"]'),
-  ).toHaveAttribute("href", "./favicon-animated.svg");
+  ).toHaveAttribute("href", "./favicon-animated.svg?v=2");
   await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute(
     "content",
     "#111112",
