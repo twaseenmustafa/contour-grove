@@ -5,8 +5,8 @@
   <p>From the first shape to the final mark, make it your own.</p>
   <p><a href="https://contour-grove.vercel.app/"><strong>Open the editor →</strong></a> &nbsp; · &nbsp; <a href="#get-started">Get started</a> &nbsp; · &nbsp; <a href="docs/development.md">For developers</a></p>
   <br />
-  <a href="https://contour-grove.vercel.app/"><img src="docs/editor-preview.png" alt="Contour Grove editor showing a flower logo on the canvas, with layers and editing controls" width="100%" /></a>
-  <sub>The Contour Grove workspace, with the built-in Bloom example.</sub>
+  <a href="https://contour-grove.vercel.app/"><img src="docs/readme-preview.png" alt="Illustration of a dimensional flower mark and cursor on a dark burgundy canvas" width="100%" /></a>
+  <sub>Make something unmistakably yours.</sub>
 </div>
 
 ## Make your mark

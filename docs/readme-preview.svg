@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#190e15"/><stop offset=".5" stop-color="#2a101d"/><stop offset="1" stop-color="#120e13"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#b85565" stop-opacity=".62"/><stop offset=".55" stop-color="#832a44" stop-opacity=".21"/><stop offset="1" stop-color="#731a35" stop-opacity="0"/></radialGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6e8dd"/><stop offset=".48" stop-color="#e7cec1"/><stop offset="1" stop-color="#b98484"/></linearGradient>
+ <linearGradient id="face" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff8ed"/><stop offset=".44" stop-color="#ead4cc"/><stop offset="1" stop-color="#a85f69"/></linearGradient>
+ <linearGradient id="depth" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#e9bbb0"/><stop offset=".48" stop-color="#a76569"/><stop offset="1" stop-color="#6b2d41"/></linearGradient>
+ <linearGradient id="cursor" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#fffdf8"/><stop offset=".45" stop-color="#f2e0d6"/><stop offset="1" stop-color="#bd9b99"/></linearGradient>
+ <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#341b29" stop-opacity=".88"/><stop offset="1" stop-color="#160f18" stop-opacity=".91"/></linearGradient>
+ <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".75" fill="#fff0e7" opacity=".18"/></pattern>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="19"/><feComponentTransfer><feFuncA type="linear" slope=".48"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+ <filter id="smallshadow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dx="4" dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".6"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<ellipse cx="858" cy="300" rx="430" ry="400" fill="url(#glow)"/>
+<rect width="1200" height="630" fill="url(#dots)" opacity=".5"/>
+<!-- restrained orbital detail -->
+<path d="M626 568C759 464 1013 431 1224 457" fill="none" stroke="#d9a6a9" opacity=".27"/>
+<path d="M719 56C909 25 1102 99 1185 229" fill="none" stroke="#e7b8b3" opacity=".13"/>
+<circle cx="660" cy="545" r="2.5" fill="#f8dcd4" opacity=".75"/>
+<!-- left hand typography -->
+<g transform="translate(68 58)">
+ <rect width="42" height="42" rx="12" fill="#f5e9df"/>
+ <path d="M31 11a14 14 0 1 0 0 20l-5-5a7 7 0 1 1 0-10z" fill="#4b1527"/>
+ <path d="M32 19c.5 3 2 4.5 5 5-3 .5-4.5 2-5 5-.5-3-2-4.5-5-5 3-.5 4.5-2 5-5" fill="#aa5c6b"/>
+ <text x="57" y="26" fill="#f5eae5" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".1">Contour Grove</text>
+</g>
+<text x="69" y="208" fill="#daaeb0" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3.1">A SPACE FOR LOGO DESIGN</text>
+<text x="65" y="307" fill="#fff5ed" font-family="Georgia,serif" font-size="76" letter-spacing="-3.8">Make your</text>
+<text x="65" y="398" fill="#f1b8b8" font-family="Georgia,serif" font-size="76" letter-spacing="-3.8">mark<tspan fill="#fff5ed">.</tspan></text>
+<text x="69" y="460" fill="#d8c2bf" font-family="Arial,sans-serif" font-size="19">A little space for big ideas.</text>
+<path d="M70 530H112" stroke="#d7858f" stroke-width="2"/><text x="126" y="534" fill="#bc9da0" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">CREATE  ·  SHAPE  ·  REFINE</text>
+<!-- a floating canvas rather than a fabricated UI -->
+<g transform="translate(704 102) rotate(-7 195 205)" filter="url(#shadow)">
+ <rect x="0" y="0" width="390" height="410" rx="28" fill="url(#card)" stroke="#c998a2" stroke-opacity=".42" stroke-width="1.4"/>
+ <rect x="17" y="17" width="356" height="376" rx="17" fill="#25131d" stroke="#ddaeb0" stroke-opacity=".12"/>
+ <rect x="17" y="17" width="356" height="376" rx="17" fill="url(#dots)" opacity=".4"/>
+ <path d="M45 52h34M45 52v34M345 52h-34M345 52v34M45 356h34M45 356v-34M345 356h-34M345 356v-34" fill="none" stroke="#dca4a8" stroke-opacity=".28" stroke-width="1"/>
+ <!-- sculptural flower, mirrored shapes with a physical bottom edge -->
+ <g transform="translate(195 203)">
+  <g fill="url(#depth)" transform="translate(8 12)">
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(72)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(144)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(216)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(288)"/>
+   <circle r="24"/>
+  </g>
+  <g fill="url(#face)" stroke="#fff5ec" stroke-opacity=".72" stroke-width="1">
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(72)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(144)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(216)"/>
+   <path d="M0 -12 C-16 -45 -37 -73 -30 -114 C-23 -154 19 -156 30 -117 C40 -79 14 -42 0 -12Z" transform="rotate(288)"/>
+   <circle r="25" fill="#4b1929" stroke="#edc7bd"/>
+  </g>
+ </g>
+ <!-- selection overlay -->
+ <rect x="150" y="45" width="91" height="144" fill="none" stroke="#e5aeb6" stroke-width="1" opacity=".78"/>
+ <g fill="#fff5ed" stroke="#d994a3" stroke-width="1.4"><circle cx="150" cy="45" r="4"/><circle cx="241" cy="45" r="4"/><circle cx="150" cy="189" r="4"/><circle cx="241" cy="189" r="4"/></g>
+</g>
+<!-- dimensional cursor -->
+<g transform="translate(1010 334) rotate(-13)" filter="url(#smallshadow)">
+ <path d="M7 12 L13 127 Q14 133 19 128 L42 102 L56 138 Q58 143 63 141 L77 135 Q81 133 79 128 L65 94 L98 93 Q105 93 100 87 L16 8 Q7 0 7 12Z" fill="#835261"/>
+ <path d="M0 0 L5 115 Q5 120 10 115 L33 89 L48 125 Q50 130 55 128 L69 122 Q73 120 71 115 L57 81 L90 80 Q97 80 92 74 L8 -5 Q0 -12 0 0Z" fill="url(#cursor)" stroke="#fff9f0" stroke-width="1.4" stroke-linejoin="round"/>
+ <path d="M7 3 L12 91" fill="none" stroke="#fff" stroke-width="1.8" opacity=".42"/>
+</g>
+<path d="M1094 123c1.2 10 5.4 14.3 15 15.5-9.6 1.2-13.8 5.5-15 15.5-1.2-10-5.4-14.3-15-15.5 9.6-1.2 13.8-5.5 15-15.5Z" fill="#f1d4cc" opacity=".9"/>
+</svg>
