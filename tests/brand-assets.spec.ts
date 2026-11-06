@@ -21,7 +21,15 @@ test("brand and preview assets load with honest metadata", async ({
   );
   await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
     "content",
-    "Logo Workshop",
+    "Contour Grove",
+  );
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    "content",
+    "https://logo-workshop-two.vercel.app/social-preview.png",
+  );
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+    "content",
+    "summary_large_image",
   );
   const response = await request.get("/social-preview.png");
   expect(response.ok()).toBe(true);

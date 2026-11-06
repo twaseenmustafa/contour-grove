@@ -8,7 +8,7 @@ function database(): Promise<IDBDatabase> {
     request.onsuccess = () => resolve(request.result);
     request.onerror = () => reject(request.error);
     request.onblocked = () =>
-      reject(Error("Close older Logo Workshop tabs to enable autosave."));
+      reject(Error("Close older Contour Grove tabs to enable autosave."));
   });
 }
 export async function saveLocal(project: Project): Promise<void> {

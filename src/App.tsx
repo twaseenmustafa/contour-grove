@@ -474,7 +474,7 @@ export default function App() {
       replace({
         schemaVersion: 1,
         name: "Untitled logo",
-        source: { name: "Created in Logo Workshop", text: "" },
+        source: { name: "Created in Contour Grove", text: "" },
         viewBox: [0, 0, 1024, 768],
         background: null,
         parts: [],
@@ -954,7 +954,7 @@ export default function App() {
           <span className="brand-mark">
             <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" />
           </span>
-          <span>Logo Workshop</span>
+          <span>Contour Grove</span>
         </a>
         <h1 className="sr-only">Logo studio</h1>
         <StudioMenu label="File" className="file-menu">

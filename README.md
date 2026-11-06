@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="public/social-preview.png" alt="Logo Workshop: Make your mark" width="100%" />
+  <img src="public/social-preview.png" alt="Contour Grove: Make your mark" width="100%" />
 
-# Logo Workshop
+# Contour Grove
 
 **A focused space for logo design.**
 
@@ -10,9 +10,9 @@ Create, shape and refine a mark without losing sight of the idea.
 
 ---
 
-Logo Workshop is a browser-based editor built around one job: making logos. Draw a shape, bring in a reference, adjust the details, and export when it feels right. Your work stays in your browser unless you choose to export it.
+Contour Grove is a browser-based editor built around one job: making logos. Draw a shape, bring in a reference, adjust the details, and export when it feels right. Your work stays in your browser unless you choose to export it.
 
-> **A work in progress:** Logo Workshop is an early, local-first editor—not yet a full replacement for Figma. Please keep project backups and check the limitations below before relying on it for important work.
+> **A work in progress:** Contour Grove is an early, local-first editor—not yet a full replacement for Figma. Please keep project backups and check the limitations below before relying on it for important work.
 
 ## Make something
 
@@ -25,7 +25,7 @@ Logo Workshop is a browser-based editor built around one job: making logos. Draw
 
 ## Start designing
 
-1. Open Logo Workshop and start with the built-in example or a blank project.
+1. Open Contour Grove and start with the built-in example or a blank project.
 2. Use the tools beside the canvas to create, select or edit shapes. Add text or import an image from **Add**.
 3. Select an item to change its properties. Right-click a shape or layer for more actions.
 4. Save a project backup while you work. When you're ready to share the artwork, choose **Export**.
